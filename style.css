@@ -1,0 +1,506 @@
+header {
+/* 1 ° cor de fundo cabeçalho */
+    background: #bbbbbb;
+    /*5° colocando espaçamento interno 
+    20px top e button e 0 direita e esquerda para deixar mae centralizada*/
+    padding: 20px 0;
+}
+
+/*4° colocando largura de 940px é uma largura padrão*/
+.caixa {
+    /*relative serve para que o elemento absolute funcione dentro*/
+    position: relative;
+    /*largura*/
+    width: 940px;
+    /*utilizando margin externo para centralizar o elemento*/
+   /*margin 0 top e button e auto direto e esquerdo*/
+    margin: 0 auto;
+}
+
+/* 3° Para mudar a posição do ponto inicial que ele se encontra
+Alternativa correta! Com o position: absolute, eu consigo 
+posicionar meu elemento em qualquer lugar da página.*/
+nav {
+    /*absolute para funcionar dentro de uma div ou de outra
+     tag que se comparta como divisão do site tem que colocar relative
+     na tag que ele esta dentro por exemplo ele esta dentro de uma div então 
+     tem que colocar relative na tag com nome class .caixa*/
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+
+/*2° pegando todos dentro nav li */
+
+nav li {
+/*por padrão a tag ul li é block convertendo inline
+fica ao lado do outro*/
+display: inline;
+
+/*espaçamento */
+margin: 0 0 0 15px;
+
+}
+/*6°*/
+
+nav a {
+    /*Deixando a fonte do texto toda maiúscula*/
+    text-transform: uppercase;
+    color: black;
+    /*Deixando a fonte mais grossa ou seja negrito*/
+    font-weight: bold;
+    /*Aumentar a fonte do texto*/
+    font-size: 22px;
+
+    /*tirando a decoração do texto */
+    text-decoration: none;
+}
+/*16° mudando a cor do menu de navegação passando apenas o mouse*/
+nav a:hover {
+color: #c78c19;
+
+text-decoration: underline;
+
+}
+
+
+
+
+/*7° Com o tamanho do seu conteúdo, mas regulável
+Alternativa correta! O tamanho pode
+ ser ajustado, tanto na largura, quanto na altura.*/
+.produtos li {
+    /*inline-block o elemento exibe seu tamanho padrão mas podemos alterar
+    também posicionar um ao lado do outro*/
+    display: inline-block;
+    /*centralizando o conteúdo*/
+    text-align: center;
+    /*distribuido a largura em cada item*/
+    width: 30%;
+    /*alinhar na linha de cima utilizando verticar-align*/
+    vertical-align: top;
+
+    /*12° arrumando espaçamentos dos elementos*/
+    /*espaçamento externo margin 0 cima e baixo e 1.5% direita e esquerda*/
+    margin: 0 1.5%;
+    /*13°*/
+    /*aumentar espaçamento interno 30px cima e baixo e 
+    20px direita esquerda*/
+    padding: 30px 20px ;
+    /*14°*/
+    /*para mexer com px e % tem que utlizar a propriedade  
+    boxsizing: border-box para
+    resolver a posição dos elementos assim somando corretamente*/
+    box-sizing: border-box;
+    /*15° criando borda para os elementos dos itens */
+    /*colocando cor na borda*/
+    border-color: black;
+    /*largura da borda*/
+    border-width: 2px;
+    /*estilo da borda*/
+    border-style: solid ;
+
+    /*ou criar a borda em uma única linha
+    tamanho o tipo e cor border: 2px solid black;*/
+    /*criando uma borda arredondada na borda*/
+    border-radius: 10px;
+
+}
+
+/*17° mudando a cor e formas 
+passando apenas o mouse por cimanos elementos*/
+.produtos li:hover {
+    /*mudando a cor da borda*/
+    border-color: #c78c19;
+}
+
+/*18° mudando a cor e formas 
+passando apenas ao clicar o mouse*/
+.produtos li:active {
+    border-color: #088c19;
+
+}
+
+/*19° mudando tamanho da fonte do título ao passar o mouse*/
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+
+/*8° mexendo no posicionamento colocando tamanho padrão 940px*/
+.produtos {
+    width: 940px;
+    /*centralizando os elementos 
+    margin 0 cima e baixo e auto direita e esquerda*/
+    margin: 0 auto;
+
+    /*utilizando padding dando espaçamento interno nossos
+     elementos estão muito colados 40px cima e baixo e 0 direita e esquerda*/
+    padding: 40px 0px;
+}
+
+
+/*9° aumentando a fonte */
+.produtos h2 {
+    font-size: 30px;
+    /*Peso da fonte seja em negrito*/
+    font-weight: bold;
+
+}
+/*10° aumentando a fonte */
+.produto-preco {
+
+    font-size: 22px;
+     /*Peso da fonte seja em negrito*/
+     font-weight: bold;
+
+     /*espaçamento externo*/
+     margin-top: 10px;
+}
+
+/*11° aumentando a fonte e colocando em negrito*/
+.produto-descricao {
+    font-size: 18px;
+}
+
+/*20° rodapé*/
+footer {
+    /*colocando o conteúdo centralizado*/
+    text-align: center;
+    /*colocando uma imagem de fundo*/
+    background:url("imgprodutos/bg.jpg");
+    /*Colocando espaçamento interno*/
+    padding: 40px 0;
+    
+}
+
+/*21° copyright*/
+.copyright {
+color: white;
+font-weight: bold;
+font-size: 13px;
+
+}
+
+
+
+
+/*Página contato.html------------------------------------------*/
+
+.main {
+    /*Largura padrão*/
+    width: 940px;
+    /* 0 cima e baixo e auto direita e esquerda
+    centralizando*/
+    margin: 0 auto;
+}
+
+
+ form {
+    /*40px cima e baixo e 0 direita e esquerda*/
+    margin: 40px 0;
+ }
+/*Display: inline ocupa seu espaço e o block
+ seu espaço ocupa 100% utilizando o block quebra a linha*/
+ /*quebrar linha com block e modificar os espaçamentos*/
+ form label, form p {
+    display: block;
+    font-size: 20px;
+    /*espaçamento baixo 20px*/
+    margin: 0 0 10px;
+ }
+/* vírgula pordemos adicionar outra tag, class e id 
+para economizar código*/
+ .input-padrao {
+    display: block;
+    /*espaçamento baixo 20px*/
+    margin: 0 0 20px;
+    /*espaçamento interno*/
+    padding: 10px 25px;
+    /*largura 50% da página*/
+    width: 50%;
+
+ }
+
+ .checkbox {
+    margin: 20px 0;
+ }
+
+ /*botão enviar*/
+ .enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    /* todos elementos o efeito no botão muda de cor 1 segundo*/
+    transition: 1s all;
+    cursor: pointer;
+ }
+
+ .enviar:hover {
+    /*ao passar o mouse por cima muda de cor*/
+    background: red;
+    /*aumenta tamanho ao passar o mouse em 1.2 = 20%*/
+    transform: scale(1.2);
+
+ }
+
+ /*mexendo na tabela */
+thead {
+    /*colocando cor de fundo no cabeçalho da tabela*/
+    background: #555555;
+    /*cor da fonte branco*/
+    color: white;
+    /*fonte da letra negrito*/
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+table {
+    margin-bottom: 25px;
+}
+
+/*Página inicial index.html------------------------------------------*/
+
+.banner {
+    /*largura do banner*/
+    width: 100%;
+
+}
+.principal {
+    margin: 3em 0;
+    background: #fefefe;
+      /*Largura padrão*/
+      width: 940px;
+      /* 0 cima e baixo e auto direita e esquerda
+      centralizando*/
+      margin: 0 auto;
+}
+
+.titulo-principal {
+    /*alinhando o título ao centro*/
+    text-align: center;
+    /*utilizando 2em quer dizer que estou dando o dobro de tamanho
+    da fonte do texto exemplo se for 15px o título vai ser 30px*/
+    font-size: 2em;
+    /*colocando uma margin pra baixo
+    dando espaçamento pra baixo tamanho da fonte*/
+    margin: 0 0 1em;
+    /*limpando o float para não afetar outros elementos*/
+    clear: left;
+}
+
+.principal p {
+     /*colocando nos parágrafos uma margin pra baixo
+    dando espaçamento pra baixo tamanho da fonte*/
+    margin: 0 0 1em;
+
+}
+
+.principal strong {
+    /*colocando em negrito*/
+    font-weight: bold;
+}
+
+.principal em {
+    /*colocando a fonte em italico*/
+    font-style: italic;
+}
+
+.beneficios {
+    /*3em 3x tamanho da fonte de espaçamento superior e inferior 
+esquerda e direita 0*/
+padding: 3em 0;
+background: #888888;
+}
+
+
+.itens {
+    /*altura da linha dos itens 1*5 igual 50% do tamanho da fonte*/
+    line-height: 1.5;
+}
+
+/*utilizando pseudo elementos first-child selecionando primeira criança
+da lista ou seja posso configurar primeiro da lista*/
+/*
+.itens:first-child {
+    font-weight: bold;
+}*/
+
+
+/*utilizando pseudo elementos nth-child(1) selecionando primeira criança
+da lista ou seja posso configurar primeiro da lista*/
+.itens:nth-child(1){
+    font-weight: bold;
+}
+/*colocando colchetes nos títulos utilizando before e after*/
+.titulo-principal:before {
+    content:"[ ";
+}
+.titulo-principal:after {
+    content:" ]";
+}
+/*colocando uma estrela do site unicode copiar e colar aqui*/
+.itens:before{
+    content: "★";
+}
+
+
+
+.lista-beneficios {
+    width: 40%;
+    /*colocando o texto e a imagem um do lado do outro*/
+    /*código html tem que estar sem espaços para poder funcionar*/
+    display: inline-block;
+    /*colocando o texto no topo*/
+    vertical-align: top;
+    
+}
+
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+/* 60% dentro da div que tem um tamanho 640px*/
+.imagem-beneficios {
+ /*largura 60%*/
+    width: 60%;
+    /*colocando opacidade 100% para utilizar hover ao colocar ao mouse*/
+    opacity: 1;
+     /*ao trocar a opacidade fica melhor o efeito*/
+     transition: 400ms;
+
+     /*colocando uma sombra ao elemento abaixo*/ /*colocando uma sombra ao elemento a cima*/
+    /*box-shadow: eixo 1°x  2°y  3°é o grau de espalhamento da sombra indo 
+    so solido para transparente 4°intensidade da borda espalha mais
+    5° é cor */
+     box-shadow: 12px 12px 1px 0 #000000, -15px -15px 1px 0 #2f2e2e;
+    margin-bottom: 20px;
+   
+
+
+}
+.imagem-beneficios:hover {
+    /*ao passar a seta do mouse por cima opacidade fica 85% */
+    opacity: 0.85;
+   
+}
+
+
+
+.imagemutensilios {
+    /*largura */
+    width: 130px;
+    /*utilizando o float para colocar ao lado do texto principal*/
+    float: left;
+    /* 0 pra cima - 20px diretita - 20px inferior 0 esquerdo*/
+    margin:0 20px 20px 0;
+
+     /*colocando uma sombra ao elemento abaixo*/ /*colocando uma sombra ao elemento a cima*/
+     box-shadow: 10px 10px 1px 0 #000000, -11px -11px 1px 0 #2f2e2e;
+}
+
+/*colocando a fonte para toda a página*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.mapa {
+    /*3em 3x tamanho da fonte de espaçamento superior e inferior 
+esquerda e direita 0*/
+    padding: 3em 0;
+    /*colocando gradiente de fundo do branco para cinza*/
+    background: linear-gradient(#fefefe , #888888);
+      
+}
+
+.mapa-conteudo {
+    /*Largura padrão*/
+     
+    width: 940px;
+    margin: 0 auto;
+
+     /*colocando uma sombra ao elemento abaixo*/ /*colocando uma sombra ao elemento a cima*/
+     box-shadow: 12px 12px 1px 0 #000000, -15px -15px 1px 0 #2f2e2e;
+}
+
+.mapa p {
+    /*espaçamento para baixo 2x tamanho da fonte do parágrafo*/
+    margin: 0 0 2em;
+    /*alinhamento ao centro o parágrafo*/
+    text-align: center;
+}
+
+/*mexendo no vídeo*/
+.video {
+    width: 560px;
+    /*centralizando vídeo*/
+    margin: 1em auto;
+
+     /*colocando uma sombra ao elemento abaixo*/ /*colocando uma sombra ao elemento a cima*/
+     box-shadow: 12px 12px 1px 0 #000000, -15px -15px 1px 0 #2f2e2e;
+}
+
+/*--------------Deixando o nosso site responsivo*-------------/
+/*começando mediaQuery*/
+@media screen and (max-width: 480px) {
+    /*colocando tudo automático*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+/*centralizando imagem que esta dentro do h1*/
+    h1 {
+        text-align: center;
+    }
+/*colocando static para posicionar abaixo*/
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+}
+
+
+/*----------------------Dicas ---------------------------------*/
+/*
+
+
+Esta propriedade CSS, assim como outras, aceita a sintaxe abreviada.
+
+Margens iguais nos quatro lados do elemento.
+margin: 30px;
+
+Margem superior e inferior de 10px. Margem esquerda e direita de 15px.
+margin: 10px 15px;
+
+Margem superior de 10px. Margem direita e esquerda de 15px.
+ Margem inferior de 20 px.
+margin: 10px 15px 20px;
+
+Margem superior de 5px. Margem direita de 10px. 
+Margem inferior de 15px. Margem esquerda de 20px;
+margin: 5px 10px 15px 20px;
+----------------------------------------------------------
+
+Descolar o elemento na lateral e deixar os outros elementos ao redor
+
+
+Alternativa correta! Tanto o float:left
+ quanto o float: right servem para que o elemento 
+ se destaque na tela, deixe de ocupar o espaço em que estava, 
+para que os outros elementos possam se posicionar ao redor dele
+
+*/

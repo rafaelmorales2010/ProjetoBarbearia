@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Resetando a página para colocar o meu estilo css-->
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="style.css">
+
+      <!--importando uma fonte da internet-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Silkscreen&display=swap"
+          rel="stylesheet">
+    <title>Contatos - Barbearia Alura</title>
+</head>
+
+<body>
+    <!--1° cabeçalho da página header-->
+    <header>
+        <!--6° cirando uma div para poder posicionar corretamente os elementos-->
+        <div class="caixa">
+            <!-- 2° Utilizando a tag h1 para dar mais importancia para a imagem-->
+            <h1><img src="imgprodutos/logo.png" alt="Logo barbearia"></h1>
+            <!-- 3° Criando uma lista não ordenada-->
+            <!--5° criando tag nav conteúdo de navegação-->
+            <nav>
+                <ul>
+                    <!-- 4° crinado links para navegar no site-->
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="produtos.html"> Produtos</a></li>
+                    <li><a href="contato.html"> Contatos</a></li>
+
+                  
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main class="main">
+        <form action="">
+            <label for="nome">Nome e sobrenome</label>
+            <!--required para deixar os campos preeencher obrigatório -->
+            <input class="input-padrao" type="text" id="nome" required>
+
+            <label for="email">E-mail</label>
+            <input class="input-padrao" type="email" id="email" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX)-XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input-padrao" name="" id="mensagem" cols="30" rows="10" required></textarea>
+            <div>
+                <p>Como prefere o nosso contato?</p>
+
+                <label for="radio-email"><input id="radio-email" name="contato" type="radio"
+                        value="email">E-mail</label>
+
+
+                <label for="radio-telefone"><input id="radio-telefone" name="contato" type="radio"
+                        value="telefone">Telefone</label>
+
+
+                <label for="radio-whatsaap"><input id="radio-whatsaap" name="contato" type="radio" value="whatssap"
+                        checked>WhatsApp</label>
+
+            </div>
+            <div>
+                <p>Qual horário prefere ser atendido</p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por
+                e-mail?</label>
+            <input type="button" value="Enviar formulário" class="enviar">
+        </form>
+
+
+        <table>
+            <!--Tag cabeçalho da tabela dando mais semântica no site-->
+            <thead>
+                <tr>
+                    <!--th coluna do cabeçalho-->
+                    <th>Dia</th>
+                    <th>horário</th>
+                </tr>
+            </thead>
+            <!--tbody corpo da tabela-->
+            <tbody>
+                <!--tr linha e td é coluna-->
+                <tr>
+                    <td>Seunda-feira</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Quarta-feira</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+
+                <tr>
+                    <td>Sexta-feira</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </main>
+
+
+    <!--9° Rodapé-->
+    <footer>
+        <img src="imgprodutos/logo-branco.png" alt="Logo produtos">
+        <p class="copyright">
+            &copy; Copyright Barbearia Alura - 2022
+        </p>
+    </footer>
+
+</body>
+
+</html>
